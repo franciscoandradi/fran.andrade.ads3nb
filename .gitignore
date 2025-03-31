@@ -1,0 +1,35 @@
+# Arquivos gerados pelo Cargo
+target/
+**/target/
+debug/
+release/
+*.rs.bk
+
+# Dependências do Cargo
+Cargo.lock
+
+# Diretórios de compilação do Rust
+*.rlib
+*.rmeta
+
+# Arquivos do Rust Analyzer
+*.rs.bk
+
+# IDEs e editores
+.idea/
+.vscode/
+*.iml
+
+# Arquivos de compilação e cache
+/target/
+**/target/
+**/*.d
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Binários gerados
+*.exe
+*.out
+*.dSYM/
