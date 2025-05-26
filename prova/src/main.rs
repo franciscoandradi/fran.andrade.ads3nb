@@ -2,13 +2,19 @@
 
 use std::collections::VecDeque; 
 
+use std::collections::VecDeque;
+
 fn main() {
-    let mut vetor = vec![34, 7, 23, 32, 5, 62, 31, 12, 43, 3];
+    let mut vetor: VecDeque<i32> = VecDeque::from(vec![34, 7, 23, 32, 5, 62, 31, 12, 43, 3]);
 
     println!("Vetor original: {:?}", vetor);
 
-    // Ordenando o vetor com sort()
-    vetor.sort();
+    // Convertendo VecDeque para Vec para usar sort()
+    let mut vetor_vec: Vec<_> = vetor.iter().cloned().collect();
+    vetor_vec.sort();
+
+    // Reconstruindo o VecDeque ordenado (opcional)
+    vetor = VecDeque::from(vetor_vec);
 
     println!("Vetor ordenado: {:?}", vetor);
 }
