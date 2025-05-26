@@ -7,11 +7,9 @@ fn main() {
 
     println!("Vetor original: {:?}", vetor);
 
-    // Convertendo VecDeque para Vec para usar sort()
     let mut vetor_vec: Vec<_> = vetor.iter().cloned().collect();
     vetor_vec.sort();
 
-    // Reconstruindo o VecDeque ordenado (opcional)
     vetor = VecDeque::from(vetor_vec);
 
     println!("Vetor ordenado: {:?}", vetor);
