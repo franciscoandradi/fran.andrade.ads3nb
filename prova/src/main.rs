@@ -1,8 +1,9 @@
 //NIVEL 1
 
+use std::collections::VecDeque; 
+
 fn main() {
-    
-    let mut vetor = [34, 7, 23, 32, 5, 62, 31, 12, 43, 3];
+    let mut vetor = vec![34, 7, 23, 32, 5, 62, 31, 12, 43, 3];
 
     println!("Vetor original: {:?}", vetor);
 
